@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@drawable/main_bg_2" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="36dp">
+
+        <ImageView
+            android:id="@+id/indoor_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            app:srcCompat="@drawable/ic_navigation_white_24dp" />
+
+        <Button
+            android:id="@+id/indoor_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onIndoorClick"
+            android:textColor="@android:color/white"
+            android:text="Навигация"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="36dp">
+
+        <ImageView
+            android:id="@+id/events_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            app:srcCompat="@drawable/ic_calendar_white_24dp" />
+
+        <Button
+            android:id="@+id/events_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onEventsClick"
+            android:textColor="@android:color/white"
+            android:text="События"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="320dp"
+        android:layout_marginStart="48dp">
+
+        <ImageView
+            android:id="@+id/residents_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            app:srcCompat="@drawable/ic_office_building_white_24dp" />
+
+        <Button
+            android:id="@+id/residents_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onResidentsClick"
+            android:textColor="@android:color/white"
+            android:text="Аренда"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="32dp">
+
+        <ImageView
+            android:id="@+id/food_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            app:srcCompat="@drawable/ic_food_white_48dp" />
+
+        <Button
+            android:id="@+id/food_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onFoodClick"
+            android:textColor="@android:color/white"
+            android:text="Фуд-корт"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="520dp"
+        android:layout_marginStart="108dp">
+
+        <ImageView
+            android:id="@+id/history_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            app:srcCompat="@drawable/ic_bank_white_48dp" />
+
+        <Button
+            android:id="@+id/history_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onHistoryClick"
+            android:textColor="@android:color/white"
+            android:text="История"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored" />
+
+    </LinearLayout>
+
+</RelativeLayout>
